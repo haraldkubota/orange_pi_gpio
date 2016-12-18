@@ -3,13 +3,6 @@ Simple GPIO with an Orange Pi Zero
 
 It was surprisingly hard to find out how to change the GPIO pins on the Orange Pi Zero. However, once you know, it's surprisingly simple. And a working example goes a long way toward this explanation.
 
-## setgpio.sh
-
-Usage: setgpio.sh -i pin1,pin2,... -o pin3,pin4,...
-
-where pin1,pin2,... are input pins and
-pin3,pin4,... are output pins.
-
 ## trigger_in16.js
 
 ### Hardware Setup
@@ -19,7 +12,10 @@ pin3,pin4,... are output pins.
 
 ### Software
 
-To run (after cloning this repository):
+You'll want Armbian from https://www.armbian.com/orange-pi-zero/
+I am using 3.4.113-sun8i kernel.
+
+After cloning this repository:
 ```
 npm install
 sudo ./setgpio.sh -i 16 -o 6,7
@@ -33,4 +29,14 @@ echo 0 >/sys/class/gpio/gpio16/value
 ```
 
 and you should see a matching change on the LED on PA7.
+
+## setgpio.sh
+
+I created this to set resp. reset GPIO pins.
+
+Usage: setgpio.sh -i pin1,pin2,... -o pin3,pin4,...
+
+where pin1,pin2,... are input pins and
+pin3,pin4,... are output pinsi, both comma separated.
+
 

@@ -1,0 +1,29 @@
+{
+  "name": "opz_gpio",
+  "version": "1.0.0",
+  "description": "Simple GPIO with an Orange Pi Zero",
+  "main": "blink7.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haraldkubota/orange_pi_gpio.git"
+  },
+  "keywords": [
+    "orangepi",
+    "orangepizero",
+    "gpio",
+    "node",
+    "nodejs"
+  ],
+  "author": "Harald Kubota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haraldkubota/orange_pi_gpio/issues"
+  },
+  "homepage": "https://github.com/haraldkubota/orange_pi_gpio#readme",
+  "dependencies": {
+    "onoff": "^1.1.1"
+  }
+}

@@ -5,20 +5,24 @@ It was surprisingly hard to find out how to change the GPIO pins on the Orange P
 
 ## setgpio.sh
 
-Usage: setgpio -i pin1,pin2,... -o pin3,pin4,...
+Usage: setgpio.sh -i pin1,pin2,... -o pin3,pin4,...
 
 where pin1,pin2,... are input pins and
 pin3,pin4,... are output pins.
 
 ## trigger_in16.js
 
-### Hardware setup
+### Hardware Setup
 
+* Connect PA7 (pin 12 of the CON4 26 pin connector) to a LED (via resistor to 3.3V)
+* Connect PA6 (pin 7 of CON4) to PA15 (pin 19 of CON4)
+
+### Software
 
 To run (after cloning this repository):
 ```
 npm install
-sudo ./setgpio -i 16 -o 6,7
+sudo ./setgpio.sh -i 16 -o 6,7
 node trigger_in16.js
 ```
 

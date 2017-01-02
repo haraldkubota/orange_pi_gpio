@@ -9,6 +9,10 @@ var Gpio = require('onoff').Gpio,
 
 sseg.setup(ser, sclk, rclk);
 
-var f=sseg.displayChars();
-setInterval(f, 200);
+//var f=sseg.circle(0x00110055, 1);
+//setInterval(f, 50);
 
+sseg.displayString("ff");
+
+//f=sseg.displayChars();
+//setInterval(f, 200);

@@ -147,7 +147,6 @@ function displayString(text) {
     data[0]=getBitMapFromChar(item.charCodeAt(0));
     sendBits(data, 1);
     });
-console.log("Printed: ", text);
   raiseRclk();
 }
 

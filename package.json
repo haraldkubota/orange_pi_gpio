@@ -4,7 +4,8 @@
   "description": "Simple GPIO with an Orange Pi Zero",
   "main": "blink7.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-io": "sudo ./setgpio.sh -o 0,1,6"
   },
   "repository": {
     "type": "git",

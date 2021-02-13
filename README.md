@@ -37,7 +37,7 @@ I created this small tool to set resp. reset GPIO pins.
 Usage: `setgpio.sh -i pin1,pin2,... -o pin3,pin4,...`
 
 where `pin1,pin2,...` are input pins and
-`pin3,pin4,...` are output pinsi, both comma separated.
+`pin3,pin4,...` are output pins, both comma separated.
 
 ## GPIO Pins
 

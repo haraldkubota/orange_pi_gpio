@@ -41,4 +41,4 @@ where `pin1,pin2,...` are input pins and
 
 ## GPIO Pins
 
-Here the list of GPIO pins which I could confirm working: http://linux-sunxi.org/Xunlong_Orange_Pi_Zero#Expansion_Port
+Here the list of GPIO pins which I could confirm working: https://linux-sunxi.org/Xunlong_Orange_Pi_Zero#Expansion_Port
